@@ -6,12 +6,34 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>Compose e-mail message</h1>
-	<p>To:&emsp;&nbsp;&nbsp;&nbsp;&emsp;<input type="text" name="to"></p>
-	<p>Form:&nbsp;&nbsp;&emsp;<input type="text" name="form"></p>
-	<p>CC:&emsp;&nbsp;&emsp;<input type="text" name="cc"></p>
-	<p>subject:&nbsp;&nbsp;&nbsp;<input type="text" name="subject"></p>
-	<p>Message:</p>
-	<textarea cols="70" rows="9"></textarea>
-</body>
+	<a href="help.html"><img src="help.jpg" align="right" class="img"></a>
+	<div id="main">
+		<h2>Compose e-mail message.</h2>
+		<form method="post" action="status.html">
+			<div class="form">
+				<label>To:</label>
+				<input type="e-mail" name="to" class="EmailEditor">
+			</div>
+			<div class="form">	
+				<label>From:</label>
+				<input type="e-mail" name="from" class="EmailEditor">
+			</div>
+			<div class="form">	
+				<label>Cc:</label>
+				<input type="text" name="cc" class="EmailEditor">
+			</div>
+			<div class="form">
+				<label>Subject:</label>
+				<input type="text" name="subject" class="EmailEditor">
+			</div>
+			<div>
+				<label>Message:</label>
+				<textarea cols="40" rows="10" class="EmailEditor"></textarea>
+			</div>
+			<div class="form">
+				<button type="submit" name="button" style="margin-left: 90px;">Send</button>
+				<button type="reset" name="button">Cancel</button>
+			</div>
+		</form>
+	</div>
 </html>
