@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.out-div{
+			border: 1px solid #337ab7;
+			border-radius: 5px;  
+		}
+
+		.head {
+			padding: 5px;
+			background-color: #337ab7;
+			color: #fff;
+			padding-bottom: 20px;
+
+		}
+
+		.input-zone button {
+			background-color: #5cb85c;
+			padding: 10px; 
+			border: none;
+			border-radius: 5px;
+			margin: 10px;
+			color: #fff;
+		}
+		.input-zone button:focus {
+			outline: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="out-div">
+		<div class="head">
+			Giải phương trình bậc 1
+		</div>
+		<div class="input-zone">
+			<button type="submit" onclick="nhapa()">Nhập Giá Trị A</button>
+			<button type="submit" onclick="nhapb()">Nhập Giá Trị B</button>
+			<button type="submit" onclick="ketqua()">In Kết Quả</button>
+		</div>
+	</div>
+<script type="text/javascript">
+	var a,b;
+	function nhapa(){
+		a = prompt('nhập giá trị A');
+	}
+	function nhapb(){
+		b = prompt('nhập giá trị B');
+	}
+	function ketqua(){
+		var x = -b/a;
+		alert('kết quả là: ' + x);
+	}
+
+</script>	
+</body>
+</html>

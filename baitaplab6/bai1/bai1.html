@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = prompt('nhap gia tri cua a: ' , 0)
+		while(a == 0){
+			alert('nhap a khac 0')
+			a = prompt('nhap gia tri cua a: ' , 0)
+		}
+		var b = prompt('nhap gia tri cua b: ' , 0)
+		var c = prompt('nhap gia tri cua c: ' , 0)
+
+		var del = (b*b)-(4*a*c)
+
+		if(del < 0){
+			alert('phuong trinh vo nghiem')
+		}else if(del > 0){
+			var n = -b + Math.sqrt(del)
+			var n1 = n/(2*a)
+			n = 0
+			n = -b - Math.sqrt(del)
+			var n2 = n/2*a
+			document.write('nghiem 1 = ' + n1 +'<br>')
+			document.write('nghiem 2 = ' ,n2)
+
+		}else if(del == 0){
+			var n = -b/2*a	
+			document.write('nghiem kep n = ' ,n)
+		}
+		
+	</script>
+</body>
+</html>
