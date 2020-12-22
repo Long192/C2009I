@@ -1,0 +1,66 @@
+
+body {
+	margin: 0px auto;
+	width: 40%;
+}
+
+#out-line {
+	margin: 0px auto;
+	background-color: #effbfb;
+	border: 1px solid #1f3a3c;
+
+}
+
+.header {
+	margin: 10px;
+	padding-left: 5px;
+	line-height: 0px;
+	border: 1px solid #1f3a3c;
+	width: 250px;
+	color: #165b61;
+	background-color: #70d4dc;	
+
+}
+.product-infor {
+
+}
+.product-infor .product {
+	width: 270px; 
+
+}
+table {
+	margin: 10px;
+	width: 80%;
+	border-color: #2196fd;
+}
+table caption {
+	color: #165b61;
+	font-size: 18px;
+	text-align: left;
+}
+table td {
+	padding-left: 5px;
+	background-color: #d9e2ea;
+}
+table select {
+	width: 150px;
+}
+.product-infor table td input {
+	width: 50px;
+}
+table.Shipping td textarea {
+	overflow-y: scroll;
+}
+table.Shipping td select {
+	width: 100px;
+}
+table.Shipping td input.cre {
+	width: 50px;
+	text-align: center;
+}
+.button {
+	text-align: center;
+	margin: 10px;
+	border: 1px solid;
+	padding: 10px;
+}

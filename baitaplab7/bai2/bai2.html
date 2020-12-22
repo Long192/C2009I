@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sinh vien</title>
+</head>
+<body> 
+	<script type="text/javascript">
+		studentlist = [];
+		var s1 = {
+		"name": "TRAN VAN A",
+		"age": 20,
+		"email": "tranvana@gmail.com",
+		"gender": "Nam"
+		}
+		var s2 = {
+		"name": "TRAN VAN B",
+		"age": 19,
+		"email": "tranvanb@gmail.com",
+		"gender": "Nam"
+		} 
+		var s3 = {
+		"name": "TRAN VAN C",
+		"age": 21,
+		"email": "tranvanc@gmail.com",
+		"gender": "Nam"
+		} 
+		var s4 = {
+		"name": "TRAN VAN D",
+		"age": 20,
+		"email": "tranvand@gmail.com",
+		"gender": "Nam"
+		} 
+		var s5 = {
+		"name": "TRAN VAN E",
+		"age": 22,
+		"email": "tranvane@gmail.com",
+		"gender": "Nam"
+		} 
+		var s6 = {
+		"name": "TRAN VAN F",
+		"age": 21,
+		"email": "tranvanf@gmail.com",
+		"gender": "Nam"
+		} 
+		var s7 = {
+		"name": "TRAN VAN G",
+		"age": 20,
+		"email": "tranvang@gmail.com",
+		"gender": "Nam"
+		} 
+		var s8 = {
+		"name": "TRAN VAN H",
+		"age": 19,
+		"email": "tranvanh@gmail.com",
+		"gender": "Nam"
+		}
+		var s9 = {
+		"name": "TRAN VAN I",
+		"age": 18,
+		"email": "tranvani@gmail.com",
+		"gender": "Nam"
+		} 
+		var s10 = {
+		"name": "TRAN VAN K",
+		"age": 23,
+		"email": "tranvank@gmail.com",
+		"gender": "Nam"
+		} 
+		var s11 = {
+		"name": "TRAN VAN L",
+		"age": 24,
+		"email": "tranvanl@gmail.com",
+		"gender": "Nam"
+		} 
+		var s12 = {
+		"name": "TRAN VAN M",
+		"age": 21,
+		"email": "tranvanm@gmail.com",
+		"gender": "Nam"
+		} 
+		var s13 = {
+		"name": "TRAN VAN N",
+		"age": 22,
+		"email": "tranvann@gmail.com",
+		"gender": "Nam"
+		} 
+		var s14 = {
+		"name": "TRAN VAN O",
+		"age": 18,
+		"email": "tranvano@gmail.com",
+		"gender": "Nam"
+		} 
+		var s15 = {
+		"name": "TRAN VAN P",
+		"age": 19,
+		"email": "tranvanp@gmail.com",
+		"gender": "Nam"
+		} 
+		var s16 = {
+		"name": "TRAN VAN Q",
+		"age": 20,
+		"email": "tranvanq@gmail.com",
+		"gender": "Nam"
+		} 
+		var s17 = {
+		"name": "TRAN VAN R",
+		"age": 21,
+		"email": "tranvanr@gmail.com",
+		"gender": "Nam"
+		} 
+		var s18 = {
+		"name": "TRAN VAN S",
+		"age": 20,
+		"email": "tranvans@gmail.com",
+		"gender": "Nam"
+		} 
+		var s19 = {
+		"name": "TRAN VAN T",
+		"age": 23,
+		"email": "tranvant@gmail.com",
+		"gender": "Nam"
+		} 
+		var s20 = {
+		"name": "TRAN VAN U",
+		"age": 22,
+		"email": "tranvanu@gmail.com",
+		"gender": "Nam"
+	}
+		studentlist.push(s1)
+		studentlist.push(s2)
+		studentlist.push(s3)
+		studentlist.push(s4)
+		studentlist.push(s5)
+		studentlist.push(s6)
+		studentlist.push(s7)
+		studentlist.push(s8)
+		studentlist.push(s9)
+		studentlist.push(s10)
+		studentlist.push(s11)
+		studentlist.push(s12)
+		studentlist.push(s13)
+		studentlist.push(s14)
+		studentlist.push(s15)
+		studentlist.push(s16)
+		studentlist.push(s17)
+		studentlist.push(s18)
+		studentlist.push(s19)
+		studentlist.push(s20)
+		var i, start, min_index, temp;
+		for (start = 0; start < 19; start++) {
+			min_index = start;
+			for (i = start+1; i < 20; i++){
+				if (studentlist[i].age < studentlist[min_index].age) {
+		 			min_index = i;`1234567IEWQ`
+				}
+			}
+			temp = studentlist[start];
+			studentlist[start] = studentlist[min_index];
+			studentlist[min_index] = temp;
+		}
+	</script>
+		<table border="1" cellpadding="5" cellspacing="3">
+			<thead>
+				<tr>	
+					<th>STT</th>
+					<th>Ten</th>
+					<th>Tuoi</th>
+					<th>Dia Chi</th>
+					<th>Email</th>
+				</tr>
+			</thead> 	
+			<tbody>		
+				<script type="text/javascript">
+					for (i=0;i<studentlist.length;i++) {	
+						document.write(`<tr>	
+						<td>${i+1}</td>
+						<td>${studentlist[i].name}</td>
+						<td>${studentlist[i].age}</td>
+						<td>${studentlist[i].email}</td>
+						<td>${studentlist[i].gender}</td>
+						</tr>`)
+					}	
+		 		</script>
+
+ 			</tbody>
+
+		</table>
+</body>
+</html>

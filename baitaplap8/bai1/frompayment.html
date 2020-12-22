@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purchase Order From</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="out-line">
+		<form>
+			<div class="header">
+				<h2>
+					Purchase Order Form
+				</h2>
+			</div>
+			<div class="product-infor">
+				<table border="1px" cellpadding="3px;">
+					<caption><strong>Product Information</strong></caption>
+					<tr>
+						<td>
+							<strong>Product:</strong>
+						</td>
+						<td>
+							<select id="select" class="Product" onchange="disabledPrice()" >
+								<option>Select</option>
+								<option>Comfort Sleeper</option>
+								<option>Morgan Kids Bed</option>
+								<option>Entertainment Cabinet</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Unit Price ($):</strong>
+						</td>
+						<td>
+							<input id="price" type="number" name="price" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Quantity:</strong>
+						</td>
+						<td>
+							<input id="quantity" type="number" name="Quantity" disabled onkeyup="totalPrice()">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Total Price ($):</strong>
+						</td>
+						<td>
+							<input id="total" type="number" name="Total" disabled>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="Shipping-infor">
+				<table border="1px" class="Shipping" cellpadding="3px">
+					<caption><strong>Shipping Information</strong></caption>
+					<tr>
+						<td>
+							<strong>Full Name:</strong>
+						</td>
+						<td>
+							<input type="text" name="full-name" >
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Shipping Address:</strong>
+						</td>
+						<td>
+							<textarea ></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Credit Card:</strong>
+						</td>
+						<td>
+							<select id="credit" onchange="creditCard()" >
+								<option>Select</option>
+								<option>VISA</option>
+								<option>Masrer Card</option>
+								<option>American Express</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Credit Card Number:</strong>
+						</td>
+						<td>
+							<input id="cre" class="cre" type="text" name="Credit1" disabled pattern="[0-9]{4}">
+							<input id="cre1" class="cre" type="text" name="Credit2" disabled pattern="[0-9]{4}">
+							<input id="cre2" class="cre" type="text" name="Credit3" disabled pattern="[0-9]{4}">
+							<input id="cre3" class="cre" type="text" name="Credit3" disabled pattern="[0-9]{4}">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="button">
+				<input type="submit" value="submit" name="">
+				<input type="reset" value="reset" name="">
+			</div>
+		</form>		
+	</div>
+
+	<script type="text/javascript">
+		//xu li disabled}
+
+		function disabledPrice() {
+			var select =document.getElementById('select').value
+			if(select !='Select'){
+				document.getElementById('quantity').disabled = false
+			}else if(select == 'Select'){
+				document.getElementById('quantity').disabled = true
+			}
+			switch(select) {
+				case 'Comfort Sleeper':
+					document.getElementById('price').value = 650
+					break;
+				case 'Morgan Kids Bed':
+					document.getElementById('price').value = 975
+					break;
+				case 'Entertainment Cabinet':
+					document.getElementById('price').value = 480	
+					break;
+			}
+		}
+
+		function totalPrice() {
+			var price = document.getElementById('price').value
+			var quantity = document.getElementById('quantity').value
+			var total = price * quantity
+			document.getElementById('total').value = total
+		}
+
+		function creditCard() {
+			var credit = document.getElementById('credit').value
+			if (credit != 'Select') {
+				document.getElementById('cre').disabled = false
+				document.getElementById('cre1').disabled = false
+				document.getElementById('cre2').disabled = false
+				document.getElementById('cre3').disabled = false
+			}else{
+				document.getElementById('cre').disabled = true
+				document.getElementById('cre1').disabled = true
+				document.getElementById('cre2').disabled = true
+				document.getElementById('cre3').disabled = true
+			}
+		}
+	</script>
+</body>
+</html>

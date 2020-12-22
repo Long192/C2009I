@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.main {
+			border-radius: 5px;
+			border: solid 1px #337ab7;
+		}
+		.head {
+			padding: 5px;
+			background-color: #337ab7;
+			color: #fff;
+		}
+		
+		.input-zone {
+			margin: 10px;
+			padding-left: 10px;
+			line-height: 25px;
+		}
+		.input-zone input {
+			width: 99%;
+			margin-bottom: 10px;
+		}
+		.input-zone a button.button1 {
+			background-color: #5cb85c;
+			border: none;
+			border-radius: 6px;
+			margin: 10px 0px ;
+			padding: 10px;
+		}
+		.input-zone a button.button2 {
+			background-color: #f1ac4a;
+			border: none;
+			border-radius: 6px;
+			margin: 10px 0px ;
+			padding: 10px;
+		}
+
+		.main2 {
+			border-radius: 5px;
+			border: solid 1px #337ab7;
+			margin-top: 20px; 
+		}
+		.tab {
+			margin: 10px;
+		}
+		.tab table {
+			border: 1px solid #337ab7;
+			border-collapse: collapse;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="head">
+			input product's detail information	
+		</div>
+		<div class="input-zone">
+			<strong>Product Name</strong>
+			<input id="product" type="text" name="name" onchange="productName()">
+			<br>
+			<strong>Category Name</strong>
+			<input id="category" type="text" name="category" onchange="category()">
+			<br>
+			<strong>Price</strong>
+			<input id="price" type="number" name="price">
+			<br>
+			<strong>Quantity</strong>
+			<input id="quantity" type="number" name="quantity">
+			<br>
+			<strong>Total Price</strong>
+			<input id="total" type="number" name="total price">
+			<br>
+			<strong>Manufacturer Name</strong>
+			<input id="manufacturer" type="text" name="Manufacturer name">
+			<a href=""><button class="button1">Add product</button></a>
+			<a href=""><button type="reset" class="button2">Reset</button></a>
+		</div>	
+	</div>
+	<div class="main2">
+		<div class="head">
+			Management Products
+		</div>
+		<div class="tab">
+			<table cellpadding="5px" cellspacing="0px" border="1px">
+				<thead>
+					<tr>
+						<th>NO</th>
+						<th>Product Name</th>
+						<th>Category Name</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Manufacturer Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<script type="text/javascript">
+						var list = {
+							"product": []
+							"category": []
+							"price": 
+							"quantity":
+							"total": 
+							"manufacturer": []
+						}
+						function productName(){
+							list.product = document.getElmentById("product")
+						}
+						function category(){
+							list.category = document.getElmentById("category")
+						}
+						function price(){
+							list.price = document.getElmentById("price")
+						}
+						function quantity(){
+							list.quantity = document.getElmentById("quantity")
+						}
+						function total(){
+							list.total = document.getElmentById("total")
+						}
+						function manufacturer(){
+							list.manufacturer = document.getElmentById("manufacturer")
+						}
+						console.log(list)
+					</script>
+				</tbody>
+			</table>
+		</div>	
+
+		
+	</div>
+</body>
+</html>
