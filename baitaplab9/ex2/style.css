@@ -1,0 +1,43 @@
+form {
+	margin: 0px auto;
+	background-color: #FFFFCC;
+	width: 50%;
+}
+.header {
+	color: #0000CC;
+	display: flex;
+}
+.header img {
+	text-align: left;
+	margin-left: 10px; 
+}
+
+.header h3 {
+	margin-top: 50px;
+	margin-left: 20px;
+	font-family: Arial; 	
+}
+.content {
+	font-family: Arial;
+	color: #000066;
+}
+.content input {
+	margin: 10px;
+
+}
+.content select {
+	margin: 10px;
+}
+.content label {
+	width: 20%;
+	margin: 10px;
+	float: left;
+	text-align: right
+}
+.content .button  {
+	text-align: center;
+
+}
+.button button {
+	background-color: #CCCCCC;
+}

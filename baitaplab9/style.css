@@ -1,0 +1,26 @@
+
+.header {
+	color: #0000CC;
+	padding: 10px;
+	font-family: Arial;
+}
+form {
+	margin: 0px auto;
+	background-color: #FFFFCC;
+	width: 40%;
+}
+
+.content p{
+	font-family: Arial;
+	color: #000066;
+}
+.content img {
+	float: left;
+}
+.content input {
+	margin:20px;
+}
+.content button {
+	margin-left: 120px;
+	margin-bottom: 20px; 
+}

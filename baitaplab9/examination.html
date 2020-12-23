@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exammination</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form>
+		<div class="ex1">
+			<div class="header">
+				<h3>Đăng Nhập Hệ Thống</h3>
+			</div>
+			<div class="content">
+				<img src="BWS_Set12/login.png">
+				<p>Tài Khoản:
+				<input type="text" name="tai-khoan" id="taikhoan">
+				</p>
+				<p>Mật Khẩu:
+				<input type="password" name="mat-khau" id="matkhau">
+				</p>
+				<button type="submit" onclick="login()">Đăng nhập</button>
+				<button type="reset">Nhập Lại</button>
+			</div>	
+		</div>
+	</form>
+	<script type="text/javascript">
+		function login() {
+			var x = document.getElementById('taikhoan').value
+			var y = document.getElementById('matkhau').value
+			if (x === "") {
+				alert('Tài Khoản Không Được Để Trống!!!!')
+			}else if(y === "") {
+				alert('Mật Khẩu Không Được Để Trống!!!!')
+			}
+			else{
+				alert('Đăng Nhập Thành Công')
+			}
+		}
+	</script>
+</body>
+</html>
