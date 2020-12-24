@@ -532,7 +532,7 @@ table tr td.des-text1 a{
 	text-decoration: none;
 	color: black;
 }
-b{
+.text-des1 i b{
 	padding-left: 20px;
 }
 .text-des1 p {
