@@ -1,0 +1,58 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+.head {
+	background-color: #80bb35;
+}
+.link-head {
+	text-decoration: none;
+	color: white;
+}
+li {
+	list-style-type: none;
+}
+.padding {
+	padding: 10px;
+}
+a.link-head {
+	text-decoration: none;
+	color: white;
+}
+.logo img {
+	height: 100px;
+}
+img.mini-logo{
+	height: 30px;
+	margin: 10px;
+}
+.margin {
+	margin: 35px;
+}
+a.hot-line{
+	color: black;
+}
+a.hot-line:hover {
+	text-decoration: none;
+	color: #80bb35;
+}
+.margin1 {
+	margin: 35px 35px 35px -30px;
+}
+.bag {
+	background-color: #fe9705;
+	width: 110px;
+	height: 30px;
+	border: none;
+	font-size: 14px;
+	margin-top: 50px;
+	color: #fff;
+	margin-left: -10px; 
+	padding: 5px;
+	border-radius: 10px;
+}
+button:focus {
+	outline: none;
+}

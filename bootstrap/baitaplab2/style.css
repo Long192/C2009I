@@ -1,0 +1,58 @@
+body {
+	margin: 0px;
+	height:100%;
+	width: 100%;
+	background-color: #ebebeb;
+}
+.top-bar {
+	background: url(bg_header_2017.jpg);
+}
+.search {
+	margin-left: 80px;
+	position: relative; 
+}
+input:focus {
+	outline: none;
+}
+button:focus {
+	outline: none;
+}
+button{
+	border: none;
+	background-color: #fff;
+}
+.register {
+	color: #fff;
+	margin: 5px;
+}
+label.center {
+	color: #fff;
+	padding-top: 5px;
+}
+.regis {
+	margin-left:200px; 
+}
+.menu-list {
+	background-color: #e4e4e4;
+}
+
+.menu-content  {
+	border-right: 1px solid #ddd;
+	list-style-type: none;
+	padding: 5px;
+} 
+.menu-content:hover {
+	background: #fff;
+	color: #ae4ad9;
+
+}
+.menu-content a:hove{
+	color: #ae4ad9;
+}
+.menu-content a  {
+	text-decoration: none;
+	line-height: 100%;
+	width: 100%;
+	padding: 5px;
+	color: black;
+}

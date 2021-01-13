@@ -1,0 +1,62 @@
+.out-line {
+	width: 50%;
+	margin: 0px auto;
+	border-radius: 10px;
+	margin-top:30px; 
+	border:1px solid #d2d2d2;
+}
+.result input{
+	width: 92%;
+	height: 30px;
+	border-radius:10px;
+	margin: 20px;
+}
+.button {
+    width: 90%;
+    margin: 0px auto
+}
+.button button.b {
+    width: 25.5%;
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    background-color: #dfe1e5;
+    border-radius: 4px; 
+}
+.button button.b1 {
+    width: 12%;
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    background-color: #dfe1e5;
+    border-radius: 4px; 
+}
+.button button.b label.after{
+	color: #aaadb3;
+}
+.button button.b label.split {
+	padding-left: 10px;
+    padding-right: 10px;
+    color: #aaadb3;
+}
+.button button.b2 {
+    width: 12%;
+    padding: 10px;
+    margin: 3px;
+    background-color: #f1f3f4;
+    border: none;
+    border-radius: 4px; 
+}
+.button button.b3 {
+    width: 12%;
+    padding: 10px;
+    margin: 3px;
+    background-color: #f1f3f4;
+    border: none;
+    border-radius: 4px; 
+    background-color: #4285f4;
+    color: #fff;
+}
+button:focus {
+	outline: none;
+}
